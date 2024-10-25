@@ -15,6 +15,9 @@
             font-size: 36px;
             text-align: center;
         }
+        form {
+            margin-left: 40px;
+        }
         h2 {
             color: darkblue;
             font-size: 36px;
@@ -22,8 +25,8 @@
         }
         table {
             border-collapse: collapse;
-            width: 80%; /* Adjust width as needed */
-            margin: 0 auto; /* Center the table */
+            width: 80%; 
+            margin: 0 auto; 
         }
         th, td {
             border: 1px solid black;
@@ -94,14 +97,14 @@
     <p style ="text-indent: 20px; margin: 20px;">Untuk informasi lebih lanjut atau untuk mengajukan layanan secara online, Anda dapat menghubungi kantor desa atau mengakses platform layanan online melalui halaman ini. Kami akan terus memperbarui informasi terkait layanan yang tersedia untuk memudahkan warga dalam mengakses berbagai kebutuhan administrasi.</p>
 
     <!-- Form -->
-     <p style ="text-align: center;"><strong>Formulir Layanan Desa</strong></h2>
-     <p style ="text-indent: 20px; margin: 20px;">Berikut adalah formulir untuk pengajuan layanan desa</p>
+     <p style="margin-left: 40px;"><strong>Formulir Layanan Desa</strong></p>
+     <p style ="text-indent: 20px; margin: 20px;">Berikut adalah formulir untuk pengajuan layanan desa :</p>
      <form action="proses_pengajuan.php" method="POST" enctype="multipart/form-data">
         <label for="nama">Nama Lengkap:</label><br>
         <input type="text" id="nama" name="nama" required><br><br>
 
         <label for="nik">Nomor Induk Kependudukan (NIK):</label><br>
-        <input type="text" id="nik" name="nik" required><br><br>
+        <input type="number" id="nik" name="nik" required><br><br>
 
         <label for="layanan">Pilih Layanan:</label><br>
         <select id="layanan" name="layanan">
